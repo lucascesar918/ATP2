@@ -9,6 +9,7 @@
 bool is_vowel(char ch);
 void populate_array(char *array, size_t size);
 int count_vowel(char *array, size_t size);
+bool is_upper(char ch);
 
 int main(int argc, char *argv[]) {
   const size_t arrlen = 8 + 1;
@@ -28,6 +29,8 @@ int main(int argc, char *argv[]) {
 }
 
 bool is_vowel(char ch) {
+  if (is_upper(ch))
+    ch += 32;
   return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
 }
 
@@ -53,3 +56,5 @@ int count_vowel(char *array, size_t size) {
 
   return count;
 }
+
+bool is_upper(char ch) { return ch >= 65 && ch <= 90; }
