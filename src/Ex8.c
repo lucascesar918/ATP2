@@ -1,18 +1,17 @@
 /*
-* Escreva um programa em C que leia 8 caracteres e verifique
-* quantos são vogais.
-*/
+ * Escreva um programa em C que leia 8 caracteres e verifique
+ * quantos são vogais.
+ */
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 bool is_vowel(char ch);
-void populate_array(char* array, size_t size);
+void populate_array(char *array, size_t size);
 
-int main(int argc, char *argv[])
-{
-  const size_t arrlen = 8+1;
-  char* array = malloc(sizeof(char)*arrlen);
+int main(int argc, char *argv[]) {
+  const size_t arrlen = 8 + 1;
+  char *array = malloc(sizeof(char) * arrlen);
 
   // Checando falha de alocação de memória
   if (array == NULL) {
@@ -29,6 +28,7 @@ bool is_vowel(char ch) {
 }
 
 // Função para preencher o array
-void populate_array(char* array, size_t size) {
-  for (int j=0; j<size; j++) {}
+void populate_array(char *array, size_t size) {
+  for (int j = 0; j < size; j++) {
+  }
 }
