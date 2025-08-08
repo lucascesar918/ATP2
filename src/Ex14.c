@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
   int *array = malloc(sizeof(int) * arrlen);
 
   if (array == NULL) {
-    perror("Falha ao alocar memória!\n");
+    perror("Falha ao alocar memÃ³ria!\n");
     return EXIT_FAILURE;
   }
 
@@ -37,7 +37,7 @@ void populate_array(int *array, size_t size) {
 
 void print_array(int *array, size_t size) {
   for (int i = 0; i < size; i++)
-    printf("[%2d°]: %2d\n", i + 1, *(array + i));
+    printf("[%2dÂ°]: %2d\n", i + 1, *(array + i));
 }
 
 int rand_between(int min, int max) { return rand() % (max - min + 1) + min; }

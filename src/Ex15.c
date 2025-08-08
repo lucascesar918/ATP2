@@ -17,14 +17,14 @@ int main(int argc, char *argv[]) {
   int *array = malloc(sizeof(int) * arrlen);
 
   if (array == NULL) {
-    perror("Falha ao alocar memória!\n");
+    perror("Falha ao alocar memÃ³ria!\n");
     return EXIT_FAILURE;
   }
 
   srand(time(NULL));
 
   populate_array(array, arrlen);
-  printf("A soma dos números do array resulta em %d.\n",
+  printf("A soma dos nÃºmeros do array resulta em %d.\n",
          array_summation(array, arrlen));
 
   free(array);

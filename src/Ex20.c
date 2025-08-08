@@ -1,6 +1,6 @@
 /*
   Escreva um programa em C que declare um array de 12
-  caracteres e use aritmética de ponteiros para inverter
+  caracteres e use aritmÃ©tica de ponteiros para inverter
   a ordem dos caracteres no array.
 */
 #include <stdio.h>
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
   char *array = malloc(sizeof(char) * arrlen);
 
   if (array == NULL) {
-    perror("Falha ao alocar memória!\n");
+    perror("Falha ao alocar memÃ³ria!\n");
     return EXIT_FAILURE;
   }
 

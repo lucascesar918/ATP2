@@ -1,7 +1,7 @@
 /*
   Escreva um programa em C que declare um array de 10
   caracteres e use um ponteiro para contar quantos desses
-  caracteres são letras maiúsculas.
+  caracteres sÃ£o letras maiÃºsculas.
 */
 
 #include <stdbool.h>
@@ -20,14 +20,14 @@ int main(int argc, char *argv[]) {
   char *array = malloc(sizeof(char) * arrlen);
 
   if (array == NULL) {
-    perror("Falha ao alocar memória!\n");
+    perror("Falha ao alocar memÃ³ria!\n");
     return EXIT_FAILURE;
   }
 
   srand(time(NULL));
 
   populate_array(array, arrlen);
-  printf("De todos os caracteres do array %d são maiúsculos\n",
+  printf("De todos os caracteres do array %d sÃ£o maiÃºsculos\n",
          count_upper(array, arrlen));
 
   free(array);

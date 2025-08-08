@@ -1,6 +1,6 @@
 /*
-  Escreva um programa em C que declare um array de 8 números de
-  ponto flutuante e use aritmética de ponteiros para calcular a média
+  Escreva um programa em C que declare um array de 8 nÃºmeros de
+  ponto flutuante e use aritmÃ©tica de ponteiros para calcular a mÃ©dia
   dos valores.
 */
 
@@ -17,14 +17,14 @@ int main(int argc, char *argv[]) {
   float *array = malloc(sizeof(float) * arrlen);
 
   if (array == NULL) {
-    perror("Falha ao alocar memória!\n");
+    perror("Falha ao alocar memÃ³ria!\n");
     return EXIT_FAILURE;
   }
 
   srand(time(NULL));
 
   populate_array(array, arrlen);
-  printf("A média aritmética dos elementos do array resulta em %.4f.",
+  printf("A mÃ©dia aritmÃ©tica dos elementos do array resulta em %.4f.",
          array_avg(array, arrlen));
 
   free(array);

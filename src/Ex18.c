@@ -1,6 +1,6 @@
 /*
   Escreva um programa em C que declare um array de 10 inteiros e use
-  aritmética de ponteiros para calcular a soma de todos os elementos
+  aritmÃ©tica de ponteiros para calcular a soma de todos os elementos
   do array. Imprima a soma.
 */
 
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
   int *array = malloc(sizeof(int) * arrlen);
 
   if (array == NULL) {
-    perror("Falha ao alocar memória!\n");
+    perror("Falha ao alocar memÃ³ria!\n");
     return EXIT_FAILURE;
   }
 
