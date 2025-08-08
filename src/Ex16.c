@@ -7,9 +7,9 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void populate_array(char *array, size_t size);
-void print_array(char *array, size_t size);
 bool is_upper(char ch);
 int rand_between(int min, int max);
 char rand_char();
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
   srand(time(NULL));
 
   populate_array(array, arrlen);
-  printf("De todos os caracteres do array %d são maiúsculos\n",
+  printf("De todos os %zu caracteres do array, %d são maiúsculos\n", arrlen,
          count_upper(array, arrlen));
 
   free(array);

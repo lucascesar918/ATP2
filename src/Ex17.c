@@ -11,6 +11,7 @@
 void populate_array(int *array, size_t size);
 void print_array(int *array, size_t size);
 int rand_between(int min, int max);
+void sum_ten(int *array, size_t size);
 
 int main(int argc, char *argv[]) {
   const size_t arrlen = 5;
