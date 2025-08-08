@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
   printf("\n");
   print_array(array, arrlen);
 
+  free(array);
   return EXIT_SUCCESS;
 }
 

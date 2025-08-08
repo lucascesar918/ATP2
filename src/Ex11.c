@@ -26,6 +26,7 @@ int main(int argc, char *argv[]) {
   populate_array(array, arrlen);
   printf("O maior valor do array é %d.\n", find_greatest(array, arrlen));
 
+  free(array);
   return EXIT_SUCCESS;
 }
 

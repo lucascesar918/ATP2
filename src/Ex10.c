@@ -27,6 +27,7 @@ int main(int argc, char *argv[]) {
   populate_array(array, arrlen);
   printf("A média dos valores aleatórios do array resulta em %.1f", array_avg(array, arrlen)); // Não há necessidade de mais que um caractere decimal, pois a precisão não precisa ser tão alta nesse caso (já que a média mínima será 50.0).
 
+  free(array);
   return EXIT_SUCCESS;
 }
 

@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
   populate_array(array, arrlen);
   print_array(array, arrlen);
 
+  free(array);
   return EXIT_SUCCESS;
 }
 

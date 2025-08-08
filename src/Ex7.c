@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
   populate_array(array, arrlen);
   printf("A média dos números do array resulta em %.2f\n", array_avg(array, arrlen));
 
+  free(array);
   return EXIT_SUCCESS;
 }
 

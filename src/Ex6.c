@@ -22,6 +22,7 @@ int main(int argc, char *argv[]) {
 
   printf("A soma dos números do array resulta em %d.\n", array_summation(array, arrlen));
 
+  free(array);
   return EXIT_SUCCESS;
 }
 
