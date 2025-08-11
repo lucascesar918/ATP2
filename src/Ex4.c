@@ -12,7 +12,6 @@ int main(int argc, char *argv[]) {
   // Checando falha de alocação de memória
   if (array == NULL) {
     perror("Falha ao alocar memória!\n");
-    free(array);
     return EXIT_FAILURE;
   }
 

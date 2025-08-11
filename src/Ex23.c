@@ -17,8 +17,7 @@ int main(int argc, char *argv[]) {
   int *array = malloc(sizeof(int) * arrlen);
 
   if (!array) {
-    perror("Falha ao alocar memória!\n");
-    free(array);
+    perror("");
     return EXIT_FAILURE;
   }
 
