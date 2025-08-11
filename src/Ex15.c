@@ -2,7 +2,6 @@
   Escreva um programa em C que declare um array de 7 inteiros e
   use um ponteiro para calcular a soma dos elementos do array.
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -18,6 +17,7 @@ int main(int argc, char *argv[]) {
 
   if (array == NULL) {
     perror("Falha ao alocar memória!\n");
+    free(array);
     return EXIT_FAILURE;
   }
 

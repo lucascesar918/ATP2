@@ -18,6 +18,7 @@ int main(int argc, char *argv[]) {
 
   if (!array) {
     perror("Falha ao alocar memória!\n");
+    free(array);
     return EXIT_FAILURE;
   }
 
