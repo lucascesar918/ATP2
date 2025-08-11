@@ -1,7 +1,7 @@
 /*
-Escreva um programa em C que leia 5 valores inteiros, armazene-
-os em um array e depois imprima os valores na ordem inversa.
-*/
+ * Escreva um programa em C que leia 5 valores inteiros, armazene-
+ * os em um array e depois imprima os valores na ordem inversa.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
