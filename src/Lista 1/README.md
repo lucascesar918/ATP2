@@ -69,4 +69,3 @@
 * **Exercício 38:** Declare um array de 10 inteiros e passe esse array para uma função que encontre o maior elemento do array.
 * **Exercício 39:** Declare um array de 6 inteiros e passe esse array para uma função que conte quantos elementos são positivos.
 * **Exercício 40:** Declare um array de 8 inteiros e passe esse array para uma função que inverta a ordem dos elementos do array.
-```
