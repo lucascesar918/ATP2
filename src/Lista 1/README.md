@@ -1,7 +1,5 @@
 ### Exercícios de Programação em C - Arrays Unidimensionais e Multidimensionais
 
-Este repositório contém uma lista de exercícios de programação em C, focados no uso de arrays unidimensionais e multidimensionais, bem como tópicos relacionados como ponteiros e passagem de parâmetros. A lista de exercícios foi elaborada por Danillo Roberto Pereira.
-
 #### 1. Declaração, inicialização e representação interna de arrays unidimensionais
 
 * **Exercício 1:** Declare um array de 10 inteiros e inicialize-o com valores de 0 a 9. Imprima todos os elementos do array.
