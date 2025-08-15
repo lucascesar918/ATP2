@@ -11,7 +11,7 @@ int count_words(char *str);
 int count_lines(char *str);
 
 int main(int argc, char *argv[]) {
-  const size_t bufsize = 1024 * 1024;
+  const size_t bufsize = 1024;
   char *buffer = malloc(sizeof(char) * bufsize);
 
   if (!buffer) {
