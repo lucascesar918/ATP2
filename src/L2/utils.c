@@ -203,6 +203,27 @@ double smallest_in(const int cols, const int rows, double matrix[cols][rows]) {
   return smallest;
 }
 
+double nth_smallest_in(const int cols, const int rows,
+                       double matrix[cols][rows], int n) {
+  int total = cols * rows;
+  double temp_array[total];
+
+  int index = 0;
+  for (int i = 0; i < cols; i++)
+    for (int j = 0; j < rows; j++)
+      temp_array[index++] = matrix[i][j];
+
+  for (int i = 0; i < total - 1; i++)
+    for (int j = 0; j < total - i - 1; j++)
+      if (temp_array[j] < temp_array[j + 1]) {
+        double temp = temp_array[j];
+        temp_array[j] = temp_array[j + 1];
+        temp_array[j + 1] = temp;
+      }
+
+  return temp_array[total - n - 1];
+}
+
 int count_even(const int cols, const int rows, int matrix[cols][rows]) {
   int count = 0;
 

@@ -69,6 +69,9 @@ double nth_largest_in(const int cols, const int rows, double matrix[cols][rows],
 
 double smallest_in(const int cols, const int rows, double matrix[cols][rows]);
 
+double nth_smallest_in(const int cols, const int rows,
+                       double matrix[cols][rows], int n);
+
 int count_even(const int cols, const int rows, int matrix[cols][rows]);
 
 double average_of(const int cols, const int rows, double matrix[cols][rows]);
