@@ -5,24 +5,18 @@
 
 int main(int argc, char *argv[]) {
   const int size = 3;
+
   double matrix_a[size][size];
   double matrix_b[size][size];
-  double matrix_c[size][size];
 
   srand(time(NULL));
-
   rand_matrix_populate(size, size, matrix_a);
   rand_matrix_populate(size, size, matrix_b);
-
-  printf("Gerando matriz A...\n");
   print_matrix(size, size, matrix_a);
-
-  printf("Gerando matriz B...\n");
   print_matrix(size, size, matrix_b);
 
-  printf("Multiplicando matrizes...\n");
-  matrix_times_matrix(size, size, matrix_a, size, size, matrix_b, matrix_c);
-  print_matrix(size, size, matrix_c);
+  printf("As matrizes %s equivalentes.\n",
+         matrixcmp(size, size, matrix_a, matrix_b) ? "são" : "não são");
 
   return EXIT_SUCCESS;
 }
