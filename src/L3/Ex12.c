@@ -168,7 +168,7 @@ View get_choice()
     return choice;
 }
 
-void handle_choice(Classroom* classroom)
+int handle_choice(Classroom* classroom)
 {
     printf("\nEscolha uma opção: ");
     switch (get_choice())
@@ -187,7 +187,7 @@ void handle_choice(Classroom* classroom)
         break;
     case EXIT:
         printf("Saindo...\n");
-        exit(0);
+        return;
     default:
         printf("Opção inválida. Escolha uma opção informada abaixo.\n");
         break;
@@ -213,7 +213,8 @@ int main()
     while (1)
     {
         ui_menu(&sala);
-        handle_choice(&sala);
+        if (handle_choice(&sala))
+            break;
     }
 
     free_classroom(&sala);
