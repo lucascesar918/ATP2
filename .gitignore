@@ -1,0 +1,5 @@
+# VS Code Codespace random shit
+
+.vscode/
+.history/
+*.code-workspace
