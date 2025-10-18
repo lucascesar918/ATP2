@@ -3,4 +3,6 @@
 .vscode/
 .history/
 *.code-workspace
-src/L4/text.txt
+text.txt
+texto.txt
+gradient.ppm
