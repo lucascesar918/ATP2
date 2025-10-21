@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 int main(int argc, char* argv[]) {
-    if (argc < 3) {
-        printf("Argumentos insuficientes!\n\nUso: %s [fonte] [destino]\n", argv[0]);
+    if (argc != 3) {
+        fprintf(stderr, "Argumentos insuficientes!\n\nUso: %s <arquivo fonte> <arquivo de destino>\n", argv[0]);
         return 1;
     }
 

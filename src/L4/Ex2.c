@@ -5,8 +5,8 @@
 #define RBUFSIZE 1024
 
 int main(int argc, char* argv[]) {
-    if (argc < 2) {
-        printf("Argumentos insuficientes!\n\nUso: %s [arquivo]\n", argv[0]);
+    if (argc != 2) {
+        fprintf(stderr, "Argumentos insuficientes\n\nUso: %s <arquivo fonte>\n", argv[0]);
         return 1;
     }
 

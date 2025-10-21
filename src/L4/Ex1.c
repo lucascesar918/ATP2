@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main() {
-    const char* data = "no matter what you say what you do, when im alone i rather be with you";
+    const char* data = "everything in its right place";
     const char* filename = "text.txt";
     FILE* fp = fopen(filename, "w");
 
