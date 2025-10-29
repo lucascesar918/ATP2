@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define BLOCKSIZE 1024 * 1024 * 64 // 64KB para uma boa eficiência na leitura
+#define BLOCKSIZE 1024 * 64 // 64KB para uma boa eficiência na leitura
 
 int main(int argc, char *argv[]) {
   if (argc != 3) {
