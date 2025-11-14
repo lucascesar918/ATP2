@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define BLOCKSIZE                                                              \
-  1024 * 64 // 64 KB para boa eficiência de leitura e escrita
+#define BLOCKSIZE 1024 * 64 // 64 KB para boa eficiência de leitura e escrita
 
 int copy_to_file(FILE *src_file, FILE *dest_file) {
   size_t bytes_read;

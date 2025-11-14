@@ -7,3 +7,8 @@ text.txt
 texto.txt
 gradient.ppm
 registro.bin
+*.chunk
+compressed.rle
+criptografado
+descriptografado
+*.hash
