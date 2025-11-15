@@ -12,3 +12,5 @@ compressed.rle
 criptografado
 descriptografado
 *.hash
+*.txt
+*.bin
